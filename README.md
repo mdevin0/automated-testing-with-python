@@ -1,8 +1,8 @@
-# Automated testing with Python
+# Automated Testing with Python
 
 For now, this is just a project to learn about automated testing with Python.
 
-## Environment setup
+## Environment Setup
 
 I'm using [Anaconda](https://www.anaconda.com) to manage my python packages. You can download it [here](https://www.anaconda.com/distribution/). Once you have it installed, you can run the following commands to setup your environment.
 
@@ -14,21 +14,26 @@ conda create -n automated-testing --file env.yml
 conda activate automated-testing
 ```
 
+## Interesting Stuff
 
-### Interesting stuff
+### Windows Subsystem Linux (WSL)
 
-## Windows Subsystem Linux (WSL)
+[Developing in WSL](https://code.visualstudio.com/docs/remote/wsl)
 
-[Develiping in WSL](https://code.visualstudio.com/docs/remote/wsl)
-
-## Conda
+### Anaconda
 
 ```bash
-#update base conda
+# Updates base conda
 conda update -n base -c defaults conda
 
-#create conda env for this project
+# Creates conda env for this project
 conda create -n automated-testing --file env.yml
+
+# Creates file with installed packages
+conda env export -n automated-testing --from-history > env.yml
+
+# Exports without prefix attribute from yml
+conda env export -n automated-testing --from-history | grep -v "^prefix: " > env.yml
 
 ```
 

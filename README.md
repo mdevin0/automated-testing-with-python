@@ -30,9 +30,9 @@ conda update -n base -c defaults conda
 conda create -n automated-testing --file env.yml
 
 # Creates file with installed packages
-conda env export -n automated-testing --from-history > env.yml
-
-# Exports without prefix attribute from yml
+# * --from-history switch lists only packages installed by the user, so dependencies can be figured 
+# out automatically.
+# * the grep command is to remove the "prefix"
 conda env export -n automated-testing --from-history | grep -v "^prefix: " > env.yml
 
 ```

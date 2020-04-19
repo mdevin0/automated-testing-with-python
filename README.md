@@ -1,6 +1,6 @@
 # Automated Testing with Python
 
-For now, this is just a project to learn about automated testing with Python.
+Just a project with what I'm coding along while going through [a course about Automated Testing with Python](https://www.udemy.com/course/automated-software-testing-with-python/).
 
 ## Environment Setup
 

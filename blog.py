@@ -9,7 +9,7 @@ class Blog:
 
     def __repr__(self):
         s = 's' if len(self.posts) != 1 else ''
-        return f'<Post - Title: {self.title}, Author: {self.author}, Posts: {len(self.posts)} post{s}>'
+        return f'<Blog - Title: {self.title}, Author: {self.author}, Posts: {len(self.posts)} post{s}>'
 
     
     def create_post(self, title, content):

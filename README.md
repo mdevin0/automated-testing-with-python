@@ -20,6 +20,12 @@ conda activate automated-testing
 
 [Developing in WSL](https://code.visualstudio.com/docs/remote/wsl)
 
+```bash
+# Starts SSH-agent and adds key to it.
+eval $(ssh-agent -s)
+ssh-add ~/.ssh/id_rsa
+```
+
 ### Anaconda
 
 ```bash

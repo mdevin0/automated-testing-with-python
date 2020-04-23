@@ -6,7 +6,7 @@ Hence, the "_class" at the end of this file name.
 '''
 
 from unittest import TestCase
-from app import app
+from flask_app.main.app import app
 
 
 class BaseTest(TestCase):

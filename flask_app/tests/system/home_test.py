@@ -5,7 +5,7 @@ Key takeaways:
 
 import json
 
-from tests.system.base_test_class import BaseTest
+from flask_app.tests.system.base_test_class import BaseTest
 
 class TestHome(BaseTest):
     def test_home(self):

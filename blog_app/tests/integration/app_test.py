@@ -2,9 +2,9 @@ from unittest import TestCase
 from unittest.mock import patch, call
 import builtins
 
-import app
-from blog import Blog
-from post import Post
+from blog_app.main import app
+from blog_app.main.blog import Blog
+from blog_app.main.post import Post
 
 class AppTest(TestCase):
     def test_list_data_called_with_blogs(self):

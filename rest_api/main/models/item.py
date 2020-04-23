@@ -1,4 +1,4 @@
-from db import db
+from rest_api.main.db import db
 
 
 class ItemModel(db.Model):

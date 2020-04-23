@@ -12,6 +12,9 @@ conda create -n automated-testing --file env.yml
 
 # Activates the created environment
 conda activate automated-testing
+
+#Install packages not available in Conda
+pip install Flask-JWT
 ```
 
 ## Interesting Stuff

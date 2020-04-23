@@ -5,7 +5,7 @@
 '''
 
 from unittest import TestCase
-from post import Post
+from blog_app.main.post import Post
 
 
 class PostTest(TestCase):

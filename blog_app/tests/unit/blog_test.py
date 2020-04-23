@@ -1,5 +1,5 @@
 from unittest import TestCase
-from blog import Blog
+from blog_app.main.blog import Blog
 
 
 class BlogTest(TestCase):

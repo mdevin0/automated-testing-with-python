@@ -1,5 +1,5 @@
-from app import app
-from db import db
+from rest_api.main.app import app
+from rest_api.main.db import db
 
 db.init_app(app)
 

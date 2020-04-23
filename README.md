@@ -44,6 +44,8 @@ conda create -n automated-testing --file env.yml
 # * The 'grep' command is to remove the 'prefix' attribute from the yml.
 conda env export -n automated-testing --from-history | grep -v "^prefix: " > env.yml
 
+# Add project to pythonpath (import) to the selected conda environment
+conda develop $(pwd)
 ```
 
 More at [managing conda environments](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html)

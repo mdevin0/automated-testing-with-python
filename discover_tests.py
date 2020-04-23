@@ -1,7 +1,7 @@
 import unittest
 
 loader = unittest.TestLoader()
-suites = loader.discover("./rest_api/tests", pattern="*_test.py")
+suites = loader.discover(".", pattern="*_test.py")
 
 print("start")  # Don't remove this line
 
